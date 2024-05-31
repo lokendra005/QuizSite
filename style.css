@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+}
+
+.intro-container, .quiz-container, .summary-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.intro-container {
+    display: flex;
+}
+
+.intro-container h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.intro-container .start-btn, .summary-container button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #00eaff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-container .start-btn:hover, .summary-container button:hover {
+    background-color: #011830;
+    box-shadow: 0 4px 12px rgba(0, 179, 255, 0.4);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-number, .score-display {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f40707;
+}
+
+.question-text {
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.answer-letter {
+    padding: 10px;
+    background-color: #c6ff09;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.answer-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.answer:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container .final-score {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
